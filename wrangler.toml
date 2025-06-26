@@ -1,0 +1,11 @@
+name = "free-filing"
+compatibility_date = "2025-03-25"
+compatibility_flags = ["nodejs_compat"]
+main = ".open-next/worker.js"
+routes = [
+  { pattern = "*.freefiling.org.uk/*", zone_name = "freefiling.org.uk" },
+  { pattern = "freefiling.org.uk/*", zone_name = "freefiling.org.uk" }
+]
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
